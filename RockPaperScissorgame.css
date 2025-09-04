@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    text-align: center;
+}
+
+.heading {
+    color:#fff;
+    background-color: #081b31;
+   /* height: 5rem;*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    
+}
+
+.score-board {
+     display: flex ;
+     justify-content: center;
+     align-items: center;
+     font-size: 2rem;
+     margin-top: 3rem;
+     gap: 5rem;
+}
+
+#user-score , #comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top:5rem ;
+}
+#msg {
+     
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+
+
+
+
+
+
+/* for the mode button */
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: black;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Toggle container (corner) */
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Hide the default checkbox */
+.toggle-container input {
+  display: none;
+}
+
+/* Toggle background */
+.toggle-label {
+  width: 70px;
+  height: 35px;
+  background: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Sun and Moon Icons */
+.toggle-label .sun, .toggle-label .moon {
+  font-size: 18px;
+  z-index: 1;
+}
+
+/* The sliding ball */
+.toggle-label .ball {
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s;
+}
+
+/* When checked, move the ball */
+.toggle-container input:checked + .toggle-label .ball {
+  transform: translateX(35px);
+}
+
