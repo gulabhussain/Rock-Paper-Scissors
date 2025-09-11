@@ -26,4 +26,4 @@ Play against the computer and see if you can win! ✊📄✂️
 ---
 
 ## 📸 Screenshots
-![Game Screenshot](screenshot.png)
+![Game Screenshot](Screenshot(RPS).png)
